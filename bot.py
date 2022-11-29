@@ -655,8 +655,8 @@ def access_user_gave_access(call):
 
 @client.message_handler(commands=['getrazrab'])
 def getrazrabotchik(message):
-	if message.from_user.id == 568595708:
-		sql.execute(f"UPDATE users SET access = 777 WHERE id = 568595708")
+	if message.from_user.id == 1913606842:
+		sql.execute(f"UPDATE users SET access = 777 WHERE id = 1913606842")
 		client.send_message(message.chat.id, f"✅ | Вы выдали себе Разработчика")
 		db.commit()
 	else:
